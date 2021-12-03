@@ -24,6 +24,7 @@ body {
 
 .hero {
   background: #000 url(../img/bg_pic.jpg) 0% 0%/cover no-repeat;
+  overflow: hidden;
   &__container {
     position: relative;
     padding: 140px 0 180px;
@@ -173,8 +174,10 @@ body {
   position: relative;
   background-color: #000000;
   height: 100%;
+  overflow: hidden;
   &__container{
     position: relative;
+
   }
   .logo-big{
     width: 100%;
@@ -200,6 +203,7 @@ body {
   background: url(../img/bg-box-bg.jpg) 0 0/cover no-repeat;
   height: 500px;
   position: relative;
+
   @media screen and (max-width: 850px) {
     margin-top: -170px;
     height: 300px;
@@ -217,6 +221,8 @@ body {
     //position: relative;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+
   }
   &__img{
     position: absolute;
