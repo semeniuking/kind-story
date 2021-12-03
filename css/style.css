@@ -1,0 +1,323 @@
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+._container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1120px) {
+  ._container {
+    padding: 0 20px;
+  }
+}
+
+.hero {
+  background: #000 url(../img/bg_pic.jpg) 0% 0%/cover no-repeat;
+}
+.hero__container {
+  position: relative;
+  padding: 140px 0 180px;
+}
+.hero__title {
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 0.85;
+  color: #B2EFFF;
+  max-width: 600px;
+  padding-top: 78px;
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 54px;
+  }
+}
+.hero__subtitle {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 130%;
+  letter-spacing: 0.01em;
+  color: #FDD395;
+  max-width: 400px;
+  padding-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .hero__subtitle {
+    font-size: 16px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+.form__name {
+  background: rgba(255, 255, 255, 0.6);
+  height: 47px;
+  min-width: 300px;
+  border: none;
+  padding: 13px 23px;
+  width: 49%;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  outline: none;
+}
+@media screen and (max-width: 1120px) {
+  .form__name {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+.form__name::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.form__email {
+  background: rgba(255, 255, 255, 0.6);
+  height: 47px;
+  min-width: 300px;
+  border: none;
+  padding: 13px 23px;
+  width: 49%;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  outline: none;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1120px) {
+  .form__email {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+.form__email::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.form__textarea {
+  background: rgba(255, 255, 255, 0.6);
+  min-width: 300px;
+  border: none;
+  padding: 13px 23px;
+  width: 49%;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+  outline: none;
+  resize: none;
+  min-height: 100px;
+  height: auto;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1120px) {
+  .form__textarea {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+.form__textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  color: #27303B;
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+.form__btn {
+  margin-top: 15px;
+  min-width: 120px;
+  color: #1A1F23;
+  font-size: 15px;
+  line-height: 1.3;
+  padding: 12px 0;
+  background-color: #4DC0A4;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.form__btn:hover {
+  cursor: pointer;
+  background-color: #67c9b1;
+}
+
+.block-arch {
+  position: relative;
+  background-color: #000000;
+  height: 100%;
+}
+.block-arch__container {
+  position: relative;
+}
+.block-arch .logo-big {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  padding: 80px 0 50px;
+}
+.block-arch .arch {
+  position: relative;
+  left: calc(50% - 396px);
+  height: auto;
+  max-width: 100%;
+  top: -250px;
+}
+@media screen and (max-width: 850px) {
+  .block-arch .arch {
+    left: 0;
+    top: -160px;
+  }
+}
+
+.box-block {
+  margin-top: -300px;
+  background: url(../img/bg-box-bg.jpg) 0 0/cover no-repeat;
+  height: 500px;
+  position: relative;
+}
+@media screen and (max-width: 850px) {
+  .box-block {
+    margin-top: -170px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .box-block {
+    top: -50%;
+  }
+}
+.box-block .loop {
+  padding: 200px 0 0;
+}
+@media screen and (max-width: 380px) {
+  .box-block .loop {
+    padding: 150px 0 0;
+  }
+}
+.box-block__container {
+  height: 100%;
+  width: 100%;
+}
+.box-block__img {
+  position: absolute;
+  top: -250px;
+  right: 0;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 550px) {
+  .box-block__img {
+    top: -50%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .box-block__img {
+    top: -50%;
+  }
+}
+
+.loop {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: loop 30s linear infinite;
+  width: 100%;
+  position: absolute;
+  height: 35px;
+  left: -38%;
+}
+.loop-bg {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: loop 30s linear infinite;
+  width: 100%;
+  position: absolute;
+  height: 35px;
+  left: -38%;
+  z-index: 9;
+}
+.loop-bg .loop__item > svg {
+  opacity: 0;
+}
+.loop__item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 35px;
+}
+.loop__item--hero {
+  background-color: #69E0FF;
+}
+.loop__item--orange {
+  background-color: #FFC982;
+}
+.loop__item--orange p {
+  z-index: 3;
+  position: relative;
+}
+.loop__item--orange svg path {
+  fill: #F2FFC7;
+}
+.loop__item--green {
+  background-color: #60EBC5;
+}
+.loop__item--green p {
+  z-index: 3;
+  position: relative;
+}
+.loop__item--green svg path {
+  fill: #FFFAF2;
+}
+.loop__item p {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 12px;
+}
+.loop__item svg {
+  width: 16.5px;
+  height: 16.5px;
+  overflow: visible;
+  margin: 0 12px;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2187px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
