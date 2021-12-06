@@ -1,0 +1,352 @@
+.hero {
+  //background: #000 url(../img/bg_pic.jpg) 0% 0%/cover no-repeat;
+  background: linear-gradient(105.55deg, #070707 0%, #000000 100.71%);
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/bg_pic.jpg) 50% 50%/contain no-repeat;
+    @media (max-width: $md3 + px) {
+      background: url(../img/bg_pic_mob.jpg) 50% 50%/contain no-repeat;
+    }
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    position: relative;
+    margin: 140px 0 180px;
+    z-index: 1;
+    @media (max-width: $md3 + px) {
+      margin: 80px 0 100px;
+    }
+  }
+
+  &__title {
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 0.85;
+    color: #B2EFFF;
+    max-width: 600px;
+    padding-top: 78px;
+    @media screen and (max-width: 768px) {
+      font-size: 54px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: #FDD395;
+    max-width: 400px;
+    padding-top: 15px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .loop {
+    top: 45px;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 30px;
+
+  &__name {
+    background: rgba(255, 255, 255, 0.6);
+    height: 47px;
+    min-width: 260px;
+    border: none;
+    padding: 13px 23px;
+    width: 550px;
+    text-transform: capitalize;
+    color: #27303B;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    outline: none;
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      color: #27303B;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 400;
+    }
+  }
+
+  &__email {
+    background: rgba(255, 255, 255, 0.6);
+    height: 47px;
+    min-width: 260px;
+    border: none;
+    padding: 13px 23px;
+    width: 550px;
+    text-transform: capitalize;
+    color: #27303B;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    outline: none;
+    margin-top: 15px;
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      color: #27303B;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 400;
+    }
+
+  }
+
+  &__textarea {
+    background: rgba(255, 255, 255, 0.6);
+    //height: 47px;
+    min-width: 260px;
+    border: none;
+    padding: 13px 23px;
+    width: 550px;
+    text-transform: capitalize;
+    color: #27303B;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    outline: none;
+    resize: none;
+    min-height: 100px;
+    height: auto;
+    margin-top: 15px;
+    @media screen and (max-width: 1120px) {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    &::placeholder {
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      color: #27303B;
+      font-size: 16px;
+      line-height: 1.3;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    margin-top: 15px;
+    min-width: 120px;
+    color: #1A1F23;
+    font-size: 15px;
+    line-height: 1.3;
+    padding: 12px 0;
+    background-color: #4DC0A4;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(#4DC0A4, 7%);
+    }
+  }
+}
+
+
+.block-arch {
+  position: relative;
+  background-color: #000000;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .loop, .loop-bg {
+    top: 200px;
+  }
+
+  .logo-big {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 80px 0 50px;
+    margin: 0 -20px;
+    @media (max-width: $md4 + px) {
+      width: 110%;
+    }
+  }
+
+  .arch {
+    position: relative;
+    //left: calc(50% - 396px);
+    height: auto;
+    max-width: 100%;
+    top: -250px;
+
+    @media screen and (max-width: 850px) {
+      left: 0;
+      top: -160px;
+    }
+  }
+}
+
+.box-block {
+  margin-top: -260px;
+  background: url(../img/bg-box-bg.jpg) 0 0/cover no-repeat;
+  height: 500px;
+  position: relative;
+
+  @media screen and (max-width: 850px) {
+    margin-top: -170px;
+    height: 300px;
+  }
+
+  .loop {
+    padding: 200px 0 0;
+    @media (max-width: $md4 + px) {
+      padding: 180px 0 0;
+    }
+  }
+
+  &__container {
+    //position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  &__img {
+    position: absolute;
+    top: -250px;
+    left: calc(60% - 575px);
+    max-width: 100%;
+    height: auto;
+    @media (max-width: $md2 + px) {
+      left: 0;
+    }
+    @media screen and (max-width: 550px) {
+      top: -50%;
+    }
+    @media screen and (max-width: 380px) {
+      top: -20%;
+    }
+  }
+}
+
+.loop {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: loop 30s linear infinite;
+  width: 100%;
+  position: absolute;
+  height: 35px;
+  left: -35vw;
+
+  &-bg {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    animation: loop 30s linear infinite;
+    width: 100%;
+    position: absolute;
+    height: 35px;
+    left: -35vw;
+    z-index: 9;
+
+    .loop__item > svg {
+      opacity: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    //width: 100%;
+    height: 35px;
+
+    &--hero {
+      background-color: #69E0FF;
+    }
+
+    &--orange {
+      background-color: #FFC982;
+
+      & p {
+        z-index: 3;
+        position: relative;
+      }
+
+      svg path {
+        fill: #F2FFC7;
+      }
+    }
+
+    &--green {
+      background-color: #60EBC5;
+
+      & p {
+        z-index: 3;
+        position: relative;
+      }
+
+      svg path {
+        fill: #FFFAF2;
+      }
+    }
+
+    & p {
+      display: block;
+      width: 100%;
+      min-width: 300px;
+      margin: 0 12px;
+    }
+
+    & svg {
+      width: 16.5px;
+      height: 16.5px;
+      overflow: visible;
+      margin: 0 12px;
+    }
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-364.5px * 6));
+  }
+}
+
