@@ -92,6 +92,15 @@
       line-height: 1.3;
       font-weight: 400;
     }
+
+    &.error {
+      border: 2px solid #ee290f;
+      color: #ee290f;
+
+      &::placeholder {
+        color: #ee290f;
+      }
+    }
   }
 
   &__email {
@@ -112,6 +121,14 @@
       width: 100%;
       max-width: 600px;
     }
+    &.error {
+      border: 2px solid #ee290f;
+      color: #ee290f;
+
+      &::placeholder {
+        color: #ee290f;
+      }
+    }
 
     &::placeholder {
       font-family: 'Poppins', sans-serif;
@@ -131,7 +148,6 @@
     border: none;
     padding: 13px 23px;
     width: 550px;
-    text-transform: capitalize;
     color: #27303B;
     font-size: 16px;
     line-height: 1.3;
@@ -145,7 +161,14 @@
       width: 100%;
       max-width: 600px;
     }
+    &.error {
+      border: 2px solid #ee290f;
+      color: #ee290f;
 
+      &::placeholder {
+        color: #ee290f;
+      }
+    }
     &::placeholder {
       font-family: 'Poppins', sans-serif;
       text-transform: capitalize;
@@ -190,7 +213,7 @@
   }
 
   .loop, .loop-bg {
-    top: 200px;
+    top: 187px;
   }
 
   .logo-big {
